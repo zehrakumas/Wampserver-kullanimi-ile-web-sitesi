@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Üyelik Sayfası</title>
+    <link rel="shortcut icon" href="resim/bayrak.ico" />
+	<meta charset="utf-8" />
+    <style>
+         body{
+            background-image:url('resim/bulut.jpg');
+            background-repeat:no-repeat;
+            background-attachment:fixed;
+        }
+         .btn{
+             border: 2px solid #DC143C;
+             background-color: white;
+             color: #DC143C;
+            padding: 10px 20px;
+            cursor: pointer;
+            
+         }
+       .btn:hover {
+             color: #fff;
+             background-color:pink;
+         }
+          div.lzm{
+              font-family:cursive;
+              color:crimson;
+          }
+         .uye{
+            color:crimson;
+            text-align:center;
+            font-size:40px;
+            font-family:cursive;
+        }
+        div.tablo{
+            border:  solid #DC143C;
+            padding: 50px 50px; 
+            border-width:50px;         
+        }
+       
+
+    </style>
+   
+
+</head>
+<body>
+   
+
+    <form action="/action_page.php" name="kayit">
+        <center>
+            <div class="tablo">
+                <div class="uye"> Yeni Üye Kaydı</div>
+                <br />
+                <!--<div class="resim"><img src="resim/uye.png" /></div>-->
+                <!--üye formu resmi için-->
+                <div class="lzm">
+                    İsim:
+                    <input type="text" name="isim" autocomplete="off">
+                    <br /><br />
+                    Soyisim:
+                    <input type="text" name="soyisim" autocomplete="off">
+                    <br /><br />
+                    Cinsiyet:
+                    <input type="radio" name="gender" value="male"> Kadın
+                    <input type="radio" name="gender" value="female"> Erkek
+                    <br /><br />
+                    Mail Adresi:
+                    <input type="email" name="mail" autocomplete="off">
+                    <br /><br />
+                    Kullanıcı Adı:
+                    <input type="text" name="kullanıcıadı" autocomplete="off">
+                    <br /><br />
+                    Şifre:
+                    <input type="password" name="sifre" autocomplete="off">
+                    <br /><br />
+                </div>
+                 <button class="btn" onclick="onayla()">Üye Ol</button>  
+               
+              
+            </div>
+        </center>
+    </form>
+
+    
+
+</body>
+</html>
